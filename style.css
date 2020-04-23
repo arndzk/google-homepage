@@ -2,6 +2,8 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-size: small;
+    font-family: arial, sans-serif;
 }
 
 #main {
@@ -11,13 +13,13 @@ body {
 
     height: 100%;
 }
-
 #content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    height: 350px;
+    flex-direction: column;
+    margin-top: 90px;
+    height: 400px;
     background-image: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
     background-repeat: no-repeat;
     background-position: center top;
@@ -33,7 +35,7 @@ body {
 
 #search-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 
     width: 100%;
@@ -47,6 +49,7 @@ body {
 
 #search {
     border: none;
+    border-radius: 24px;
 }
 
 #button-container {
@@ -56,6 +59,12 @@ body {
 
     width: 100%;
     padding-top: 20px;
+}
+
+#languages {
+    display: inline-block;
+    line-height: 28px;
+    margin-top: 12px;
 }
 
 .button {
@@ -73,3 +82,5 @@ body {
     text-align: center;
     cursor: pointer;
 }
+
+a { text-decoration: none; }
