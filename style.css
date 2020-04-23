@@ -1,24 +1,40 @@
 html,
 body {
+    display: block;
     height: 100%;
     margin: 0;
     font-size: small;
     font-family: arial, sans-serif;
+    overflow: auto;
 }
 
 #main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 130px;
 
     height: 100%;
 }
+
+#navbar {
+    list-style-type: none;
+    margin: 15px auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-item {
+    display: inline;
+    padding-left: 13px;
+}
+
 #content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 90px;
     height: 400px;
     background-image: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
     background-repeat: no-repeat;
@@ -67,6 +83,21 @@ body {
     margin-top: 12px;
 }
 
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    background: #f2f2f2;
+}
+
+.footer-bar {
+    color: rgba(0,0,0,.54);
+    font-size: 14px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+}
+
 .button {
     font-size: 14px;
     margin: 11px 4px;
@@ -83,4 +114,7 @@ body {
     cursor: pointer;
 }
 
-a { text-decoration: none; }
+a { 
+    text-decoration: none;
+    color: inherit;
+}
