@@ -28,6 +28,11 @@ body {
 .navbar-item {
     display: inline;
     padding-left: 13px;
+    margin-left: 5px;
+}
+
+.navbar-link {
+    color: inherit;
 }
 
 #content {
@@ -116,5 +121,44 @@ footer {
 
 a { 
     text-decoration: none;
-    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar-link:hover {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+#google-apps {
+    display: inline-block;
+    opacity: .55;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+#google-apps:hover {
+    opacity: 1;
+}
+
+#google-one {
+    margin-top: -5px;
+}
+
+
+#google-one:hover {
+    cursor: pointer;
+}
+
+#user-icon {
+    display: block;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin: -1px;
+    margin-top: -38px;
+    margin-left: 4px;
 }
