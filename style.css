@@ -190,6 +190,7 @@ a:hover {
 
 #links-right {
     float: right;
+    margin-right: 30px;
 }
 
 .footer-link {
